@@ -1,0 +1,227 @@
+@import "tailwindcss";
+
+@theme {
+  /* Backgrounds */
+  --color-background: #07090f;
+  --color-foreground: #eaf0fb;
+
+  /* Surfaces */
+  --color-surface: #0d1117;
+  --color-surface-2: #121820;
+  --color-surface-offset: #1a2235;
+
+  /* Muted */
+  --color-muted: #1a2235;
+  --color-muted-foreground: #7a8ba8;
+
+  /* Primary — electric cyan */
+  --color-primary: #00c2ff;
+  --color-primary-foreground: #07090f;
+
+  /* Secondary — warm gold */
+  --color-secondary: #e8c55a;
+  --color-secondary-foreground: #07090f;
+
+  /* Borders & inputs */
+  --color-border: #1e2d42;
+  --color-input: #1a2235;
+  --color-ring: #00c2ff;
+
+  /* Destructive */
+  --color-destructive: #ff4d4d;
+  --color-destructive-foreground: #eaf0fb;
+
+  /* Card */
+  --color-card: #0d1117;
+  --color-card-foreground: #eaf0fb;
+
+  /* Popover */
+  --color-popover: #121820;
+  --color-popover-foreground: #eaf0fb;
+
+  /* Accent */
+  --color-accent: #0d2535;
+  --color-accent-foreground: #00c2ff;
+
+  /* Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+
+  /* Spacing (4px grid) */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+  --spacing-24: 6rem;
+
+  /* Fluid type scale */
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+  --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+  --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+  --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+  --text-hero: clamp(3rem, 0.5rem + 7vw, 8rem);
+
+  /* Fonts */
+  --font-heading: var(--font-space-grotesk), "Cabinet Grotesk", sans-serif;
+  --font-body: var(--font-cairo), "Cairo", sans-serif;
+  --font-sans: var(--font-cairo), "Cairo", sans-serif;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px oklch(0 0 0 / 0.3);
+  --shadow-md: 0 4px 12px oklch(0 0 0 / 0.4);
+  --shadow-lg: 0 12px 32px oklch(0 0 0 / 0.5);
+
+  /* Transitions */
+  --transition-interactive: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    scroll-padding-top: var(--spacing-16);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    line-height: 1.6;
+    min-height: 100dvh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    line-height: 1.15;
+    text-wrap: balance;
+  }
+
+  p,
+  li {
+    text-wrap: pretty;
+  }
+
+  img,
+  video {
+    display: block;
+    max-width: 100%;
+  }
+
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+    color: inherit;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 3px;
+    border-radius: var(--radius-sm);
+  }
+
+  ::selection {
+    background-color: var(--color-primary);
+    color: var(--color-primary-foreground);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* RTL: force Cairo for headings and any .font-heading element so
+   Arabic glyphs are always rendered (Latin/numerals supported by Cairo too).
+   Uses !important to override Tailwind utility classes. */
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6,
+[dir="rtl"] .font-heading {
+  font-family: var(--font-body) !important;
+}
+
+/* Hero grid pattern */
+.hero-grid {
+  background-image:
+    linear-gradient(to right, rgba(30, 45, 66, 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(30, 45, 66, 0.4) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 40%, transparent 100%);
+}
+
+/* Marquee animation */
+@keyframes marquee-rtl {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes marquee-ltr {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.marquee-track {
+  animation: marquee-rtl 40s linear infinite;
+}
+.marquee-track-reverse {
+  animation: marquee-ltr 40s linear infinite;
+}
+.marquee-pause:hover .marquee-track,
+.marquee-pause:hover .marquee-track-reverse {
+  animation-play-state: paused;
+}
+
+/* WhatsApp pulse */
+@keyframes wa-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 194, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 14px rgba(0, 194, 255, 0);
+  }
+}
+.wa-pulse {
+  animation: wa-pulse 2.4s ease-out infinite;
+}

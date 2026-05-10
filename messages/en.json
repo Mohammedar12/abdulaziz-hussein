@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "title": "Mazen Abdulaziz Hussein — Strategic & Operational Planning Consultant",
+    "description": "Consulting and training in strategic and operational planning, KPIs, OKRs, and Vision 2030 alignment. 20+ years of executive experience."
+  },
+  "common": {
+    "phone": "+966 55 636 1166",
+    "whatsappLabel": "WhatsApp",
+    "bookConsultation": "Book a Consultation",
+    "learnMore": "Learn More",
+    "contactMe": "Contact Me",
+    "scrollHint": "Scroll"
+  },
+  "nav": {
+    "logo": "Mazen A. Hussein",
+    "logoSub": "Strategy Practice",
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "clients": "Clients",
+    "courses": "Courses",
+    "contact": "Contact",
+    "languageToggle": "العربية",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "hero": {
+    "roleChip": "Strategic & Operational Planning",
+    "name": "Mazen Abdulaziz Hussein",
+    "tagline": "Translating long-range strategy into measurable operations across regulators, banks, and Vision 2030 programs — with twenty years of accountable execution.",
+    "imageAlt": "Portrait of Mazen Abdulaziz Hussein",
+    "yearsLabel": "Years of practice"
+  },
+  "stats": {
+    "title": "By the numbers",
+    "items": [
+      { "value": 20, "suffix": "+", "label": "Years of experience" },
+      { "value": 13, "suffix": "+", "label": "Professional certifications" },
+      { "value": 8, "suffix": "+", "label": "Industry sectors served" },
+      { "value": 5, "suffix": "+", "label": "Vision 2030 programs" }
+    ]
+  },
+  "certs": {
+    "label": "Accredited Professional Certifications",
+    "items": [
+      "MBA",
+      "PMP",
+      "BSMP",
+      "SMPS",
+      "C-KPIP",
+      "6 Sigma MBB",
+      "C-OKRP",
+      "C-IP",
+      "C-SBP",
+      "C-ASE",
+      "OPM",
+      "ATD",
+      "TVTC"
+    ]
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "A practitioner who turns strategy into operating reality.",
+    "lead": "Mazen Abdulaziz Hussein is a senior consultant and trainer in strategic and operational planning. Over more than two decades, he has worked alongside government regulators, financial institutions, insurance leaders, and investment groups to design strategies that survive contact with execution.",
+    "body": "His practice combines corporate strategy, operating models, KPI architecture, and OKR rollout — grounded in measurable outcomes rather than slideware. He partners directly with executive teams to convert direction into governance cadence, dashboards, and disciplined delivery.",
+    "vision": "Active contributor to Vision 2030 enablement programs, including NDLIP and DARP, supporting national capability building in strategic planning.",
+    "languages": "Languages",
+    "languageList": ["Arabic", "English"],
+    "experienceLabel": "20+ years",
+    "experienceSub": "in strategic & operational planning"
+  },
+  "services": {
+    "eyebrow": "Practice areas",
+    "title": "Services",
+    "subtitle": "Six focused engagements — selected by mandate, scoped to outcomes, delivered with executive sponsorship.",
+    "items": [
+      {
+        "id": "strategic",
+        "title": "Strategic Planning Consulting",
+        "description": "Corporate and business-unit strategy: diagnostics, ambition setting, strategic choices, and a board-ready execution map."
+      },
+      {
+        "id": "operational",
+        "title": "Operational Planning",
+        "description": "Translating strategy into annual operating plans, capacity models, and quarterly delivery cycles tied to budget."
+      },
+      {
+        "id": "kpi",
+        "title": "KPI Design & Dashboards",
+        "description": "End-to-end KPI architecture — definitions, owners, baselines, targets — visualised in executive performance dashboards."
+      },
+      {
+        "id": "okr",
+        "title": "OKR Implementation",
+        "description": "OKR rollout for leadership teams: cadence, scoring, alignment, and pragmatic integration with existing governance."
+      },
+      {
+        "id": "training",
+        "title": "Strategic Training Programs",
+        "description": "Accredited programs for executives and planning teams — strategy, KPIs, OKRs, and operational excellence."
+      },
+      {
+        "id": "vision",
+        "title": "Vision 2030 Alignment",
+        "description": "Mapping institutional priorities to national objectives and Vision 2030 enablers, including NDLIP and DARP."
+      }
+    ]
+  },
+  "clients": {
+    "eyebrow": "Engagements",
+    "title": "Sectors and institutions served",
+    "subtitle": "A practice built on long-form mandates with regulators, financial institutions, and national authorities.",
+    "row1": [
+      "Saudi Chambers Federation",
+      "Al Majal Insurance — United Insurance Company",
+      "General Authority of Civil Aviation (GACA)",
+      "Riyad Bank",
+      "Al-Naghawi & Sons Investment Group",
+      "Ministry of Human Resources & Social Development",
+      "National Cybersecurity Authority"
+    ],
+    "row2": [
+      "Ministry of Interior",
+      "Prince Sultan University",
+      "Ministry of Finance",
+      "Saudi Authority for Data & AI",
+      "Hail Development Authority",
+      "Second Health Cluster — Riyadh",
+      "Vision 2030 — NDLIP & DARP"
+    ]
+  }
+}
