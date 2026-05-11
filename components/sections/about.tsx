@@ -1,20 +1,24 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { useTranslations } from "next-intl"
-import { ArrowRight, Award, Languages } from "lucide-react"
+import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { ArrowRight, Award, Languages } from "lucide-react";
 
-import { useReveal } from "@/hooks/use-reveal"
-import { Button } from "@/components/ui/button"
+import { useReveal } from "@/hooks/use-reveal";
+import { Button } from "@/components/ui/button";
 
 export function About() {
-  const t = useTranslations("about")
-  const tCommon = useTranslations("common")
-  const root = useReveal<HTMLElement>({ staggerMs: 90 })
-  const languages = t.raw("languageList") as string[]
+  const t = useTranslations("about");
+  const tCommon = useTranslations("common");
+  const root = useReveal<HTMLElement>({ staggerMs: 90 });
+  const languages = t.raw("languageList") as string[];
 
   return (
-    <section id="about" ref={root} className="border-b border-border bg-background py-24 md:py-32">
+    <section
+      id="about"
+      ref={root}
+      className="border-b border-border bg-background py-24 md:py-32"
+    >
       <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-12 px-4 md:px-8 lg:grid-cols-12 lg:gap-16">
         {/* Photo + meta cards */}
         <div className="lg:col-span-5">
@@ -23,7 +27,7 @@ export function About() {
             className="relative aspect-[4/5] w-full overflow-hidden rounded-xl border border-border bg-surface"
           >
             <Image
-              src="/images/mazen-portrait.jpg"
+              src="/images/mazen-portrait2.jpg"
               alt={t("title")}
               fill
               sizes="(min-width: 1024px) 32rem, 80vw"
@@ -37,8 +41,12 @@ export function About() {
                 <Award className="size-4 text-primary" />
                 Experience
               </div>
-              <div className="mt-3 font-heading text-2xl text-foreground">{t("experienceLabel")}</div>
-              <div className="mt-1 text-xs text-muted-foreground">{t("experienceSub")}</div>
+              <div className="mt-3 font-heading text-2xl text-foreground">
+                {t("experienceLabel")}
+              </div>
+              <div className="mt-1 text-xs text-muted-foreground">
+                {t("experienceSub")}
+              </div>
             </div>
             <div className="rounded-lg border border-border bg-card p-5">
               <div className="flex items-center gap-2 text-xs uppercase tracking-wider text-muted-foreground">
@@ -61,7 +69,10 @@ export function About() {
 
         {/* Text */}
         <div className="lg:col-span-7">
-          <div data-reveal className="text-xs uppercase tracking-[0.25em] text-primary">
+          <div
+            data-reveal
+            className="text-xs uppercase tracking-[0.25em] text-primary"
+          >
             {t("eyebrow")}
           </div>
           <h2
@@ -89,7 +100,9 @@ export function About() {
             data-reveal
             className="mt-8 rounded-lg border-l-2 border-primary bg-surface/60 p-5 rtl:border-l-0 rtl:border-r-2"
           >
-            <div className="text-xs uppercase tracking-wider text-primary">Vision 2030</div>
+            <div className="text-xs uppercase tracking-wider text-primary">
+              Vision 2030
+            </div>
             <p className="mt-2 max-w-2xl text-sm leading-relaxed text-foreground md:text-base">
               {t("vision")}
             </p>
@@ -110,5 +123,5 @@ export function About() {
         </div>
       </div>
     </section>
-  )
+  );
 }

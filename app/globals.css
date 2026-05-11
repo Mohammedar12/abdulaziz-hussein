@@ -2,46 +2,47 @@
 
 @theme {
   /* Backgrounds */
-  --color-background: #07090f;
-  --color-foreground: #eaf0fb;
+  /* Base */
+  --color-background: #0c0a09;
+  --color-foreground: #fafaf9;
 
-  /* Surfaces */
-  --color-surface: #0d1117;
-  --color-surface-2: #121820;
-  --color-surface-offset: #1a2235;
+  /* Surfaces — warm charcoal, not cold blue-black */
+  --color-surface: #141210;
+  --color-surface-2: #1c1917;
+  --color-surface-offset: #292524;
 
   /* Muted */
-  --color-muted: #1a2235;
-  --color-muted-foreground: #7a8ba8;
+  --color-muted: #292524;
+  --color-muted-foreground: #a8a29e;
 
-  /* Primary — electric cyan */
-  --color-primary: #00c2ff;
-  --color-primary-foreground: #07090f;
+  /* Primary — rich amber gold (achievement, energy, success) */
+  --color-primary: #f0a500;
+  --color-primary-foreground: #0c0a09;
 
-  /* Secondary — warm gold */
-  --color-secondary: #e8c55a;
-  --color-secondary-foreground: #07090f;
+  /* Secondary — warm stone */
+  --color-secondary: #e7e5e4;
+  --color-secondary-foreground: #0c0a09;
 
   /* Borders & inputs */
-  --color-border: #1e2d42;
-  --color-input: #1a2235;
-  --color-ring: #00c2ff;
+  --color-border: #292524;
+  --color-input: #1c1917;
+  --color-ring: #f0a500;
 
   /* Destructive */
-  --color-destructive: #ff4d4d;
-  --color-destructive-foreground: #eaf0fb;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #fafaf9;
 
   /* Card */
-  --color-card: #0d1117;
-  --color-card-foreground: #eaf0fb;
+  --color-card: #141210;
+  --color-card-foreground: #fafaf9;
 
   /* Popover */
-  --color-popover: #121820;
-  --color-popover-foreground: #eaf0fb;
+  --color-popover: #1c1917;
+  --color-popover-foreground: #fafaf9;
 
   /* Accent */
-  --color-accent: #0d2535;
-  --color-accent-foreground: #00c2ff;
+  --color-accent: #292524;
+  --color-accent-foreground: #f0a500;
 
   /* Radius */
   --radius-sm: 0.375rem;
@@ -62,13 +63,23 @@
   --spacing-24: 6rem;
 
   /* Fluid type scale */
-  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --text-xs: clamp(0.7rem, 0.68rem + 0.1vw, 0.75rem);
+  --text-sm: clamp(0.875rem, 0.84rem + 0.175vw, 0.95rem);
+  --text-base: clamp(1rem, 0.96rem + 0.2vw, 1.1rem);
+  --text-lg: clamp(1.15rem, 1.1rem + 0.35vw, 1.35rem);
+  --text-xl: clamp(1.4rem, 1.2rem + 0.6vw, 1.75rem);
+  --text-2xl: clamp(1.45rem, 1.5rem, 2rem);
+  --text-3xl: clamp(1.75rem, 1.8rem + 2.5vw, 2.25rem);
+  --text-hero: clamp(2.5rem, 1.8rem + 2.5vw, 3.75rem);
+
+  /* Fluid type scale */
+  /* --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
   --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
   --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
   --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
   --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
-  --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
-  --text-hero: clamp(3rem, 0.5rem + 7vw, 8rem);
+  --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3rem);
+  --text-hero: clamp(3rem, 0.5rem + 7vw, 5rem); */
 
   /* Fonts */
   --font-heading: var(--font-space-grotesk), "Cabinet Grotesk", sans-serif;
@@ -176,7 +187,7 @@
 }
 
 /* Reveal-on-scroll: opacity + translateY transition driven by [data-revealed] */
-[data-reveal] {
+/* [data-reveal] {
   opacity: 0;
   transform: translateY(20px);
   transition:
@@ -194,7 +205,7 @@
     transform: none;
     transition: none;
   }
-}
+} */
 
 /* Hero grid pattern */
 .hero-grid {
@@ -202,7 +213,11 @@
     linear-gradient(to right, rgba(30, 45, 66, 0.4) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(30, 45, 66, 0.4) 1px, transparent 1px);
   background-size: 64px 64px;
-  mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 40%, transparent 100%);
+  mask-image: radial-gradient(
+    ellipse 80% 60% at 50% 40%,
+    black 40%,
+    transparent 100%
+  );
 }
 
 /* Marquee animation */
