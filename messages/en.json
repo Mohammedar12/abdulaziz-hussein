@@ -128,5 +128,127 @@
       "Second Health Cluster — Riyadh",
       "Vision 2030 — NDLIP & DARP"
     ]
+  },
+  "currentWork": {
+    "eyebrow": "In progress",
+    "title": "Currently Working On",
+    "subtitle": "Active engagements and upcoming programs.",
+    "items": [
+      {
+        "title": "Corporate Strategy Building Program",
+        "status": "Open for registration",
+        "statusType": "open",
+        "cta": "Register Now"
+      },
+      {
+        "title": "KPI Design Workshop",
+        "status": "Coming soon",
+        "statusType": "soon"
+      },
+      {
+        "title": "Institutional Consulting: Investment Sector",
+        "status": "In progress",
+        "statusType": "progress"
+      },
+      {
+        "title": "OKR + Operational Planning Methodology Development",
+        "status": "Research & Development",
+        "statusType": "rd"
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "title": "What clients say",
+    "items": [
+      {
+        "quote": "Mazen brought clarity to our five-year strategy that translated directly into quarterly execution rhythms. His approach is rigorous yet pragmatic.",
+        "name": "Khalid Al-Rashid",
+        "title": "CEO",
+        "org": "National Investment Group"
+      },
+      {
+        "quote": "The KPI framework he designed gave us visibility we never had before. Our leadership team now makes decisions based on real data, not intuition.",
+        "name": "Sarah Al-Mutairi",
+        "title": "Chief Strategy Officer",
+        "org": "Regional Insurance Corporation"
+      },
+      {
+        "quote": "His training programs are exceptional — grounded in real experience, not academic theory. Our planning team's capability improved measurably within months.",
+        "name": "Ahmed Al-Zahrani",
+        "title": "VP of Corporate Planning",
+        "org": "Saudi Financial Services"
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "What is the typical engagement duration?",
+        "a": "Most strategic planning engagements span 3-6 months, depending on organizational complexity. Training programs range from 2-day workshops to multi-week certification courses."
+      },
+      {
+        "q": "Do you work with government entities?",
+        "a": "Yes. A significant portion of my practice involves government regulators, ministries, and Vision 2030 program offices. I hold the necessary certifications and clearances."
+      },
+      {
+        "q": "How do you ensure strategy execution, not just planning?",
+        "a": "My methodology ties every strategic objective to operational plans, KPIs, and governance rhythms. I stay engaged through quarterly reviews to ensure accountability."
+      },
+      {
+        "q": "What languages are training programs delivered in?",
+        "a": "All programs are available in both Arabic and English. Materials and facilitation can be fully localized to your organization's preferred language."
+      },
+      {
+        "q": "How do I book a consultation?",
+        "a": "You can reach me directly via WhatsApp at +966 55 636 1166, or fill out the contact form on this page. Initial consultations are complimentary."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Get in touch",
+    "title": "Book a Consultation",
+    "subtitle": "Let's discuss how I can support your strategic objectives.",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "Your name",
+      "org": "Organization",
+      "orgPlaceholder": "Your company or institution",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+966 5X XXX XXXX",
+      "email": "Email Address",
+      "emailPlaceholder": "email@example.com",
+      "service": "Service Type",
+      "servicePlaceholder": "Select a service",
+      "serviceOptions": [
+        "Strategic Planning Consulting",
+        "Operational Planning",
+        "KPI Design & Dashboards",
+        "OKR Implementation",
+        "Training Programs",
+        "Vision 2030 Alignment",
+        "Other"
+      ],
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your needs...",
+      "language": "Preferred Language",
+      "languageArabic": "Arabic",
+      "languageEnglish": "English",
+      "submit": "Send Message",
+      "whatsappAlt": "Or reach me directly via WhatsApp"
+    },
+    "success": "Thank you! Your message has been received. I will respond within 24 hours."
+  },
+  "footer": {
+    "name": "Mazen Abdulaziz Hussein",
+    "title": "Strategic & Operational Planning Consultant",
+    "quickLinks": "Quick Links",
+    "servicesTitle": "Services",
+    "contactTitle": "Contact",
+    "email": "mazen@strategy.sa",
+    "certLine": "MBA · PMP · BSMP · SMPS · C-KPIP · 6σ MBB · C-OKRP",
+    "copyright": "© 2024 Mazen Abdulaziz Hussein. All rights reserved."
   }
 }

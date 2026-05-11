@@ -7,6 +7,8 @@ import { Analytics } from "@vercel/analytics/next"
 
 import { routing } from "@/i18n/routing"
 import { Navbar } from "@/components/layout/navbar"
+import { Footer } from "@/components/layout/footer"
+import { FloatingWhatsApp } from "@/components/layout/floating-whatsapp"
 import "../globals.css"
 
 const cairo = Cairo({
@@ -62,6 +64,8 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages} locale={locale}>
           <Navbar />
           <main className="relative">{children}</main>
+          <Footer />
+          <FloatingWhatsApp />
         </NextIntlClientProvider>
         {process.env.NODE_ENV === "production" && <Analytics />}
       </body>

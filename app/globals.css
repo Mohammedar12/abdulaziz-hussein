@@ -246,3 +246,13 @@
 .wa-pulse {
   animation: wa-pulse 2.4s ease-out infinite;
 }
+
+.floating-whatsapp {
+  animation: wa-pulse 2.4s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-whatsapp {
+    animation: none;
+  }
+}
