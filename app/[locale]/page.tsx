@@ -1,23 +1,24 @@
-import { setRequestLocale } from "next-intl/server"
+import { setRequestLocale } from "next-intl/server";
 
-import { Hero } from "@/components/sections/hero"
-import { Stats } from "@/components/sections/stats"
-import { Certifications } from "@/components/sections/certifications"
-import { About } from "@/components/sections/about"
-import { Services } from "@/components/sections/services"
-import { Clients } from "@/components/sections/clients"
-import { CurrentWork } from "@/components/sections/current-work"
-import { Testimonials } from "@/components/sections/testimonials"
-import { FAQ } from "@/components/sections/faq"
-import { Contact } from "@/components/sections/contact"
+import { Hero } from "@/components/sections/hero";
+import { Stats } from "@/components/sections/stats";
+import { Certifications } from "@/components/sections/certifications";
+import { About } from "@/components/sections/about";
+import { Services } from "@/components/sections/services";
+import { Clients } from "@/components/sections/clients";
+import { CurrentWork } from "@/components/sections/current-work";
+import { Testimonials } from "@/components/sections/testimonials";
+import { FAQ } from "@/components/sections/faq";
+import { Contact } from "@/components/sections/contact";
+import VideoSection from "@/components/sections/courses";
 
 export default async function HomePage({
   params,
 }: {
-  params: Promise<{ locale: string }>
+  params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params
-  setRequestLocale(locale)
+  const { locale } = await params;
+  setRequestLocale(locale);
 
   return (
     <>
@@ -27,10 +28,11 @@ export default async function HomePage({
       <About />
       <Services />
       <Clients />
+      <VideoSection title="المحتوى" perPage={6} />
       <CurrentWork />
       <Testimonials />
       <FAQ />
       <Contact />
     </>
-  )
+  );
 }

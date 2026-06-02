@@ -27,11 +27,11 @@ export function About() {
             className="relative aspect-[4/5] w-full overflow-hidden rounded-xl border border-border bg-surface"
           >
             <Image
-              src="/images/mazen-portrait2.jpg"
+              src="/images/pf-img.jpeg"
               alt={t("title")}
               fill
               sizes="(min-width: 1024px) 32rem, 80vw"
-              className="object-cover"
+              className="object-cover object-right"
             />
           </div>
 

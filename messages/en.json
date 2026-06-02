@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Mazen Abdulaziz Hussein — Strategic & Operational Planning Consultant",
+    "title": "Abdulaziz Mazen Hussein — Strategic & Operational Planning Consultant",
     "description": "Consulting and training in strategic and operational planning, KPIs, OKRs, and Vision 2030 alignment. 20+ years of executive experience."
   },
   "common": {
@@ -12,7 +12,7 @@
     "scrollHint": "Scroll"
   },
   "nav": {
-    "logo": "Mazen A. Hussein",
+    "logo": "Abdulaziz Mazen Hussein",
     "logoSub": "Strategy Practice",
     "home": "Home",
     "about": "About",
@@ -26,9 +26,9 @@
   },
   "hero": {
     "roleChip": "Strategic & Operational Planning",
-    "name": "Mazen Abdulaziz Hussein",
+    "name": "Abdulaziz Mazen Hussein",
     "tagline": "Translating long-range strategy into measurable operations across regulators, banks, and Vision 2030 programs — with twenty years of accountable execution.",
-    "imageAlt": "Portrait of Mazen Abdulaziz Hussein",
+    "imageAlt": "Portrait of Abdulaziz Mazen Hussein",
     "yearsLabel": "Years of practice"
   },
   "stats": {
@@ -61,7 +61,7 @@
   "about": {
     "eyebrow": "About",
     "title": "A practitioner who turns strategy into operating reality.",
-    "lead": "Mazen Abdulaziz Hussein is a senior consultant and trainer in strategic and operational planning. Over more than two decades, he has worked alongside government regulators, financial institutions, insurance leaders, and investment groups to design strategies that survive contact with execution.",
+    "lead": "Abdulaziz Mazen Hussein is a senior consultant and trainer in strategic and operational planning. Over more than two decades, he has worked alongside government regulators, financial institutions, insurance leaders, and investment groups to design strategies that survive contact with execution.",
     "body": "His practice combines corporate strategy, operating models, KPI architecture, and OKR rollout — grounded in measurable outcomes rather than slideware. He partners directly with executive teams to convert direction into governance cadence, dashboards, and disciplined delivery.",
     "vision": "Active contributor to Vision 2030 enablement programs, including NDLIP and DARP, supporting national capability building in strategic planning.",
     "languages": "Languages",
@@ -105,6 +105,38 @@
         "description": "Mapping institutional priorities to national objectives and Vision 2030 enablers, including NDLIP and DARP."
       }
     ]
+  },
+  "courses": {
+    "eyebrow": "Training Programs",
+    "title": "Courses & Educational Content",
+    "subtitle": "Practical training programs and workshops designed for executives and planning teams.",
+    "viewAll": "View all videos on YouTube",
+    "items": {
+      "0": {
+        "title": "Strategic Planning Fundamentals",
+        "desc": "A practical introduction to corporate strategy frameworks, ambition setting, and execution mapping.",
+        "tag": "Strategy",
+        "watch": "Watch on YouTube"
+      },
+      "1": {
+        "title": "OKR Implementation Workshop",
+        "desc": "Step-by-step guidance on rolling out OKRs across leadership teams with alignment and cadence.",
+        "tag": "OKRs",
+        "watch": "Watch on YouTube"
+      },
+      "2": {
+        "title": "KPI Design Masterclass",
+        "desc": "End-to-end KPI architecture: definitions, owners, baselines, and executive dashboard visualisation.",
+        "tag": "KPIs",
+        "watch": "Watch on YouTube"
+      },
+      "3": {
+        "title": "Vision 2030 Alignment Program",
+        "desc": "How to map your institutional priorities to national objectives and Vision 2030 targets.",
+        "tag": "Vision 2030",
+        "watch": "Watch on YouTube"
+      }
+    }
   },
   "clients": {
     "eyebrow": "Engagements",
@@ -242,13 +274,13 @@
     "success": "Thank you! Your message has been received. I will respond within 24 hours."
   },
   "footer": {
-    "name": "Mazen Abdulaziz Hussein",
+    "name": "Abdulaziz Mazen Hussein",
     "title": "Strategic & Operational Planning Consultant",
     "quickLinks": "Quick Links",
     "servicesTitle": "Services",
     "contactTitle": "Contact",
     "email": "mazen@strategy.sa",
     "certLine": "MBA · PMP · BSMP · SMPS · C-KPIP · 6σ MBB · C-OKRP",
-    "copyright": "© 2024 Mazen Abdulaziz Hussein. All rights reserved."
+    "copyright": "© 2024 Abdulaziz Mazen Hussein. All rights reserved."
   }
 }

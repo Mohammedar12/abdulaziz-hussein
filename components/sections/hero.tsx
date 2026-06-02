@@ -146,7 +146,7 @@ export function Hero() {
           >
             <div className="absolute inset-0 ring-1 ring-inset ring-primary/20" />
             <Image
-              src="/images/mazen-portrait2.jpg"
+              src="/images/pf-img4.jpeg"
               alt={t("imageAlt")}
               fill
               priority
