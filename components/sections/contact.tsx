@@ -1,39 +1,39 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { useTranslations } from "next-intl"
-import { useForm } from "react-hook-form"
-import { Send, MessageCircle, CheckCircle } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
+import { useState } from "react";
+import { useTranslations } from "next-intl";
+import { useForm } from "react-hook-form";
+import { Send, MessageCircle, CheckCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
-import { Label } from "@/components/ui/label"
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
-import { useReveal } from "@/hooks/use-reveal"
-import { cn } from "@/lib/utils"
+} from "@/components/ui/select";
+import { Label } from "@/components/ui/label";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { useReveal } from "@/hooks/use-reveal";
+import { cn } from "@/lib/utils";
 
 type FormData = {
-  name: string
-  org: string
-  phone: string
-  email: string
-  service: string
-  message: string
-  language: "ar" | "en"
-}
+  name: string;
+  org: string;
+  phone: string;
+  email: string;
+  service: string;
+  message: string;
+  language: "ar" | "en";
+};
 
 export function Contact() {
-  const t = useTranslations("contact")
-  const tCommon = useTranslations("common")
-  const revealRef = useReveal<HTMLElement>()
-  const [submitted, setSubmitted] = useState(false)
+  const t = useTranslations("contact");
+  const tCommon = useTranslations("common");
+  const revealRef = useReveal<HTMLElement>();
+  const [submitted, setSubmitted] = useState(false);
 
   const {
     register,
@@ -45,7 +45,7 @@ export function Contact() {
     defaultValues: {
       language: "ar",
     },
-  })
+  });
 
   const serviceOptions = [
     t("form.serviceOptions.0"),
@@ -55,16 +55,16 @@ export function Contact() {
     t("form.serviceOptions.4"),
     t("form.serviceOptions.5"),
     t("form.serviceOptions.6"),
-  ]
+  ];
 
   const onSubmit = async (data: FormData) => {
     // Simulate form submission
-    console.log("[v0] Form submitted:", data)
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-    setSubmitted(true)
-  }
+    console.log("[v0] Form submitted:", data);
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    setSubmitted(true);
+  };
 
-  const selectedLanguage = watch("language")
+  const selectedLanguage = watch("language");
 
   return (
     <section
@@ -173,18 +173,26 @@ export function Contact() {
               <Label>{t("form.language")}</Label>
               <RadioGroup
                 value={selectedLanguage}
-                onValueChange={(val) => setValue("language", val as "ar" | "en")}
+                onValueChange={(val) =>
+                  setValue("language", val as "ar" | "en")
+                }
                 className="flex gap-6"
               >
                 <div className="flex items-center space-x-2 rtl:space-x-reverse">
                   <RadioGroupItem value="ar" id="lang-ar" />
-                  <Label htmlFor="lang-ar" className="font-normal cursor-pointer">
+                  <Label
+                    htmlFor="lang-ar"
+                    className="font-normal cursor-pointer"
+                  >
                     {t("form.languageArabic")}
                   </Label>
                 </div>
                 <div className="flex items-center space-x-2 rtl:space-x-reverse">
                   <RadioGroupItem value="en" id="lang-en" />
-                  <Label htmlFor="lang-en" className="font-normal cursor-pointer">
+                  <Label
+                    htmlFor="lang-en"
+                    className="font-normal cursor-pointer"
+                  >
                     {t("form.languageEnglish")}
                   </Label>
                 </div>
@@ -219,5 +227,5 @@ export function Contact() {
         )}
       </div>
     </section>
-  )
+  );
 }
